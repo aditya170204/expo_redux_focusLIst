@@ -13,7 +13,7 @@ const App = () => {
   return (
     <Provider store={store}>
       <NavigationContainer>
-        <Stack.Navigator>
+        <Stack.Navigator initialRouteName="TargetList">
           <Stack.Screen name="AddTarget" component={AddTarget} />
           <Stack.Screen name="TargetList" component={TargetList} />
           <Stack.Screen name="EditTarget" component={EditTarget} />

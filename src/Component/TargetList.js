@@ -1,6 +1,7 @@
 import { Button, FlatList, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import { useSelector } from "react-redux";
+import AddTarget from "./AddTarget";
 
 const TargetList = ({ navigation }) => {
   const aims = useSelector((state) => state.focus.Targets);
@@ -26,6 +27,10 @@ const TargetList = ({ navigation }) => {
             />
           </View>
         )}
+      />
+      <Button
+        title="Add more Targets"
+        onPress={() => navigation.navigate(AddTarget)}
       />
     </View>
   );

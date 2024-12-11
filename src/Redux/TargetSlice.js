@@ -16,7 +16,7 @@ const TargetSlice = createSlice({
     editTarget: (state, action) => {
       const { id, text } = action.payload;
       const aim = state.Targets.find((aim) => aim.id === id);
-      if (aim) aim.id = text;
+      if (aim) aim.text = text;
     },
     deleteTarget: (state, action) => {
       state.Targets = state.Targets.filter((aim) => aim.id !== action.payload);

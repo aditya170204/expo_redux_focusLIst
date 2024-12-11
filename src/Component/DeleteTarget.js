@@ -7,7 +7,7 @@ const DeleteTarget = ({ route, navigation }) => {
   const { id } = route.params;
   const dispatch = useDispatch();
   const aim = useSelector((state) =>
-    state.focus.aim.find((aim) => aim.id === id)
+    state.focus.Targets.find((aim) => aim.id === id)
   );
 
   const handleDelete = () => {
